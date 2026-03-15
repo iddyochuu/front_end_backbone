@@ -25,7 +25,35 @@
           <script src="assets/js/jquery-3.2.1.min.js"></script>
 		
 	
-	
+	<!-- jQuery (must be loaded first) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slimscroll JS -->
+<script src="src/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    // Apply slimscroll to sidebar-inner
+    $('.sidebar-inner').slimScroll({
+      height: '100%', // full height
+      color: '#aaa', // scrollbar color
+      size: '5px', // scrollbar width
+    });
+  });
+</script>
+
+<!-- Raphael & Morris JS -->
+<script src="assets/plugins/raphael/raphael.min.js"></script>
+<script src="assets/plugins/morris/morris.min.js"></script>
+<script src="assets/js/chart.morris.js"></script>
+
+<!-- CSS fix -->
+<style>
+  .sidebar {
+    height: 100vh; /* full viewport height */
+    overflow: hidden; /* let slimscroll handle scrolling */
+  }
+</style>
 
 </body>
 </html>
